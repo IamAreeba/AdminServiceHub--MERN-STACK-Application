@@ -3,13 +3,9 @@ const app = express()
 
 const PORT = 5000
 
-app.get('/', (req, res) => {
-    res.status(200).send("Welcome TO our website")
-})
 
-app.get('/register', (req, res) => {
-    res.status(200).send("Welcome to registeration page")
-})
+app.use('/api/auth', require('./router/auth-route'))
+
 
 
 
