@@ -19,5 +19,18 @@
     "dispatch": func that carries out that action
     In useReducer we have dispatch and we have action
     
+*/
+
+// ============== 06 ==================
+/*
+    Working with req.body()
+    When we are working with json or sharing and displaying the Json data we need to use middlewares
+    nodemon always refreshes server.js file
+
+    app.use(express.json())
+    We have to use it before the request or top of all the requests when we are working with json data so that we can access the json data in response
+
+
+
 
 */

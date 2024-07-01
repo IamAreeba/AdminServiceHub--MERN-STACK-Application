@@ -1,7 +1,7 @@
 
 const express = require('express')
 const router = express.Router()
-const { home, register } = require('../controllers/auth-controller')
+// const { home, register } = require('../controllers/auth-controller')
 const authController = require('../controllers/auth-controller')
 
 // router.get('/', (req, res) => {
@@ -13,13 +13,13 @@ const authController = require('../controllers/auth-controller')
     // res.status(200).send("Welcome To Our Website")
 // })
 
-router.route('/').get(authController.home)
+router.route('/').post(authController.home)
 
 // router.route('/register').get((req, res) => {
 //     res.status(200).send("Welcome to registeration page")
 // })
 
-router.route('/register').get(authController.register)
+router.route('/register').post(authController.register)
 
 
 module.exports = router

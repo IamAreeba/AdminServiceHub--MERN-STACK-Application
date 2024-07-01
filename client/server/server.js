@@ -3,6 +3,7 @@ const app = express()
 
 const PORT = 5000
 
+app.use(express.json())
 
 app.use('/api/auth', require('./router/auth-route'))
 
