@@ -11,3 +11,13 @@
     Server.js is our main app and nodemon constantly checkout this file
     mount: Where do you want to show them
 */
+
+// ================= 05 ======================
+/*
+    Controllers: Contain all the functionality / all actions
+    "action": Desc of what u want to do
+    "dispatch": func that carries out that action
+    In useReducer we have dispatch and we have action
+    
+
+*/
