@@ -14,13 +14,12 @@ const home = async (req, res) => {
 }
 
 
-
 // Register Logic
   
 const register = async (req, res) => {
     try {
         // res.status(400).send({ message: "Welcome to register page using Controllers" })
-        console.log(req.body)
+        console.log(req.body) 
         res.status(200).json({ messsage: req.body })
     } catch (error) {
         res.status(400).send({ msg: "Page not found" })
